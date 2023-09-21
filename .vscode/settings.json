@@ -1,0 +1,32 @@
+{
+    "C_Cpp.intelliSenseEngineFallback": "disabled",
+    "files.associations": {
+        "stdint.h": "c",
+        "secret.h": "c",
+        "secret-collection.h": "c",
+        "secret-attributes.h": "c",
+        "secret-enum-types.h": "c",
+        "secret-password.h": "c",
+        "glib.h": "c",
+        "galloca.h": "c",
+        "garray.h": "c",
+        "gbase64.h": "c",
+        "gfileutils.h": "c",
+        "gkeyfile.h": "c",
+        "gerror.h": "c",
+        "alloca.h": "c",
+        "string.h": "c",
+        "gtypes.h": "c",
+        "gasyncqueue.h": "c",
+        "genviron.h": "c",
+        "ghostutils.h": "c",
+        "giochannel.h": "c",
+        "gconvert.h": "c",
+        "gmain.h": "c",
+        "gpoll.h": "c",
+        "secret-value.h": "c",
+        "secret-types.h": "c",
+        "secret-prompt.h": "c",
+        "glibconfig.h": "c"
+    }
+}

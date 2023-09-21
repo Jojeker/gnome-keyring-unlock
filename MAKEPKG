@@ -1,0 +1,31 @@
+pkgname=gnome-keyring-usb
+pkgver=0.1
+pkgrel=1
+pkgdesc="Unlock the gnome keyring with a physical USB key."
+arch=('amd64')
+license=('GPL-3.0')
+depends=('libsecret')
+source=("http://search.cpan.org/CPAN/authors/id/S/SH/SHERZODR/Config-Simple-${pkgver}.tar.gz")
+md5sums=('f014aec54f0a1e2e880d317180fce502')
+_distname="Config-Simple"
+
+# template start; name=perl-module; version=1.0;
+_distdir="${_distname}-${pkgver}"
+url="https://metacpan.org/release/${_distname}"
+options+=('!emptydirs')
+
+build() {
+        cd "$srcdir/$_distdir"
+        perl Makefile.PL INSTALLDIRS=vendor
+        make
+}
+
+check() {
+        cd "$srcdir/$_distdir"
+        make test
+}
+
+package() {
+        cd "$srcdir/$_distdir"
+        make DESTDIR="$pkgdir" install
+}

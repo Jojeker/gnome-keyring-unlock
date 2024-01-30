@@ -1,11 +1,12 @@
 [package]
-name = "keyring-usb-unlock"
+name = "gnome-keyring-unlock"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# CLI Args for manual invocation
 clap = { version = "4.4.18", features = ["derive"] }
 
 # Parse the configuration file

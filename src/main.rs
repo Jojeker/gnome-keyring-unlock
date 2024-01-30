@@ -5,7 +5,7 @@ use gkd_protocol::{ControlCodes, ResultCodes};
 
 mod gkd_protocol;
 
-const CONFIG_FILE: &str = "./config/gkd-unlock.yaml";
+const CONFIG_FILE: &str = "/etc/gkd-unlock/config.yaml";
 
 #[derive(Parser, Debug)]
 struct Args {

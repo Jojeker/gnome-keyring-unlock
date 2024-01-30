@@ -1,13 +1,12 @@
 [Unit]
-Description=GNOME Keyring USB Unlock Service
+Description=GNOME Keyring Unlock Service
 After=graphical.target
 Requires=graphical.target
 
 [Service]
 Type=simple
-ExecStart=/path/to/your/program
-Environment=DISPLAY=:0
-Environment=XAUTHORITY=/home/your_username/.Xauthority
+ExecStart=/usr/bin/gnome-keyring-unlock
+Restart=on-failure
 
 [Install]
 WantedBy=default.target

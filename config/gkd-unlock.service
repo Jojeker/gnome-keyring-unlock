@@ -1,7 +1,5 @@
 [Unit]
 Description=GNOME Keyring Unlock Service
-After=graphical.target
-Requires=graphical.target
 
 [Service]
 Type=simple
